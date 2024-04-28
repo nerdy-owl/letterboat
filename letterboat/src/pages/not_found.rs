@@ -1,4 +1,5 @@
 use leptos::*;
+#[cfg(feature = "ssr")]
 use leptos_actix::*;
 
 #[component]
