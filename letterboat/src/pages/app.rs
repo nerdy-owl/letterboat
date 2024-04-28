@@ -1,4 +1,4 @@
-use crate::pages::{home::HomePage, not_found::NotFound};
+use crate::pages::{home::HomePage, not_found::NotFound, letter_view::LetterView};
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
@@ -15,6 +15,7 @@ pub fn App() -> impl IntoView {
             <main>
                 <Routes>
                     <Route path="" view=HomePage/>
+                    <Route path="/letterview" view=LetterView/>
                     <Route path="/*any" view=NotFound/>
                 </Routes>
             </main>
