@@ -1,8 +1,10 @@
-use crate::pages::{home::HomePage, not_found::NotFound, write_message::WriteMessage, letter_view::LetterView};
+use crate::pages::{
+    home::HomePage, letter_view::LetterView, not_found::NotFound, write_message::WriteMessage,
+};
 //use crate::pages::{home::HomePage, not_found::NotFound, write_message::WriteMessage};
+use crate::components::counter::Counter;
 use leptos::*;
 use leptos_router::*;
-
 #[component]
 pub fn App() -> impl IntoView {
     view! {
@@ -16,5 +18,6 @@ pub fn App() -> impl IntoView {
                 </Routes>
             </main>
         </Router>
+
     }
 }
